@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Restaurant</title>
+</head>
+<body>
+   <header class="header container">
+        <nav class="header__menu hidden-tablet">
+            <ul class="header__menu-list">
+                
+                <li class="header__menu-item">
+                    <a class="header__menu-link" href="#">Welcome</a>
+                </li>
+    
+                 <li class="header__menu-item">
+                    <a class="header__menu-link" href="#">Our Menu</a>
+                </li>
+    
+                 <li class="header__menu-item">
+                    <a class="header__menu-link" href="#">Franchise</a>
+                </li>
+    
+                 <li class="header__menu-item">
+                    <a class="header__menu-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    
+        <div class="header__logo">
+            <img class="header__image" 
+             src="/icons/logo.svg" alt="logo">
+        </div>
+         <div class="header__action action">
+      <svg class="action__basket" width="30" height="33" viewBox="0 0 30 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M21.7436 32.1107C23.1445 32.1107 24.2802 30.9267 24.2802 29.4662C24.2802 28.0057 23.1445 26.8218 21.7436 26.8218C20.3427 26.8218 19.207 28.0057 19.207 29.4662C19.207 30.9267 20.3427 32.1107 21.7436 32.1107Z" fill="white" />
+      <path d="M10.146 32.1107C11.5469 32.1107 12.6825 30.9267 12.6825 29.4662C12.6825 28.0057 11.5469 26.8218 10.146 26.8218C8.74504 26.8218 7.60938 28.0057 7.60938 29.4662C7.60938 30.9267 8.74504 32.1107 10.146 32.1107Z" fill="white" />
+      <path d="M5.20361 4.06491L4.91371 7.76715C4.85573 8.47738 5.39204 9.06671 6.07329 9.06671H28.2647C28.8735 9.06671 29.3808 8.58315 29.4243 7.94848C29.6127 5.2738 27.6559 3.09779 25.0904 3.09779H7.27635C7.13141 2.4329 6.84151 1.79823 6.39218 1.26934C5.66744 0.468447 4.65281 0 3.60919 0H1.0871C0.492821 0 0 0.51378 0 1.13334C0 1.7529 0.492821 2.26668 1.0871 2.26668H3.60919C4.05852 2.26668 4.47887 2.46312 4.78326 2.79557C5.08765 3.14313 5.2326 3.59646 5.20361 4.06491Z" fill="white" />
+      <path d="M27.9192 11.3335H5.68424C5.07546 11.3335 4.58264 11.8171 4.52466 12.4366L4.00285 19.01C3.79993 21.594 5.74222 23.8002 8.22082 23.8002H24.339C26.5132 23.8002 28.4265 21.9416 28.5859 19.6749L29.0642 12.6179C29.1222 11.9228 28.6004 11.3335 27.9192 11.3335Z" fill="white" />
+      </svg>
+      <svg class="action__magnifier hidden-tablet" width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M15.4583 28.9167C22.8912 28.9167 28.9167 22.8912 28.9167 15.4583C28.9167 8.0255 22.8912 2 15.4583 2C8.0255 2 2 8.0255 2 15.4583C2 22.8912 8.0255 28.9167 15.4583 28.9167Z" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M30.3333 30.3333L27.5 27.5" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+       <button class="action__button button hidden-tablet"><span>Become a Member</span></button>
+         </div>
+    
+         <button class="header__burger-button burger__button visible-tablet-above"
+         type="button"
+         onclick="tabletOverlay.showModal()">
+         <span class="burger__button-span"></span>
+         <span class="visually-hidden">Open nivigation menu</span>
+         </button>
+   </header>
+
+   <main>
+    <section class="welcome ">
+        <div class="welcome__inner container">
+            <div class="welcome__wrapper">
+                <div class="welcome__wrapper-inner">
+                    <h1 class="welcome__title">Welcome! <br>
+                     We Make Delicious <br> Food for You</h1>
+                     <div class="welcome__description">
+                        <p>Fresh ingredients, juicy burgers, and crispy snacks - all with just one click!</p>
+                     </div>
+                     <button class="welcome__button button">Order Online</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="food container">
+        <div class="food__header">
+            <h2 class="food__title">Why We are Best Food Maker</h2>
+            <div class="food__description">
+                <p>We serve fresh and delicious fast food with quick service and unique recipes.
+                Every meal is tasty, satisfying, and made for those who love great food on the go.</p>
+        </div>
+        </div>
+        <div class="food__body">
+            <div class="food__text">
+                <p>Our restaurant is a team of chefs who know what makes fast food truly quality.
+                We control every step of the cooking process, from the selection of farm-fresh 
+                ingredients to the correct cooking temperature. With our state-of-the-art equipment, 
+                transparent processes, and attention to detail, we create food that you can trust and
+                enjoy every day. We believe that the perfect fast food is not just about food, but 
+                about the little pleasures that make the day better. That's why we cook as if we were 
+                making an order for our friends: fresh ingredients, honest portions, rich flavors, and 
+                a smile on our faces. We want every dish to bring you the same joy that it brings us when
+                we prepare it.</p>
+        </div>
+        <div class="food__video">
+        <video src="" width="570" height="430" controls poster="/images/video.png"></video>
+        </div>
+        </div>
+    </section>
+
+    <section class="menu container" id="menu">
+        <div class="menu__header">
+            <h2 class="menu__title">Our Best & Delicious Menu</h2>
+            <nav class="menu__navigation">
+              <ul class="menu__list">
+                  <li class="menu__item">
+                      <a href="#" class="menu__link">All</a>
+                  </li>  
+                  <li class="menu__item">
+                      <a href="#" class="menu__link">Bread</a>
+                  </li>
+                  <li class="menu__item">
+                      <a href="#" class="menu__link">Chiffon & Rolls</a>
+                  </li>
+                  <li class="menu__item">
+                      <a href="#" class="menu__link">Donut</a>
+                  </li>
+                  <li class="menu__item">
+                      <a href="#" class="menu__link">Pastry & Danish</a>
+                  </li>
+                  <li class="menu__item">
+                      <a href="#" class="menu__link">Cakes</a>
+                  </li>
+                  <li class="menu__item">
+                      <a href="#" class="menu__link">Cookies</a>
+                  </li>
+              </ul>
+            </nav>
+        </div>
+      <div class="menu__body">
+    
+        <div class="card">
+            <img src="/images/menu1.png" alt="burger" class="card__image">
+            <div class="card__body">
+                <h3 class="card__title"><a class="card__title-name" href="">Naan Burger</a></h3>
+                <div class="card__description">
+                    <p>Soft flatbread with juicy chicken, 
+                    fresh vegetables, and a spicy sauce</p>
+                </div>
+                <div class="card__text">
+                    <p class="card__price">$1.85</p>
+                    <svg class="card__basket" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0.5" y="0.5" width="39" height="39" rx="19.5"/>
+  <path d="M11.6667 11.6667H13.1167C14.0167 11.6667 14.725 12.4417 14.65 13.3333L13.9584 21.6333C13.8417 22.9916 14.9167 24.1583 16.2833 24.1583H25.1584C26.3584 24.1583 27.4084 23.175 27.5 21.9833L27.95 15.7333C28.05 14.35 27 13.225 25.6083 13.225H14.85"/>
+  <path d="M23.5417 28.3333C24.117 28.3333 24.5833 27.867 24.5833 27.2917C24.5833 26.7164 24.117 26.25 23.5417 26.25C22.9664 26.25 22.5 26.7164 22.5 27.2917C22.5 27.867 22.9664 28.3333 23.5417 28.3333Z"/>
+  <path d="M16.875 28.3333C17.4503 28.3333 17.9166 27.867 17.9166 27.2917C17.9166 26.7164 17.4503 26.25 16.875 26.25C16.2997 26.25 15.8333 26.7164 15.8333 27.2917C15.8333 27.867 16.2997 28.3333 16.875 28.3333Z"/>
+  <path d="M17.5 16.6667H27.5"/>
+</svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/images/menu2.png" alt="burger" class="card__image">
+            <div class="card__body">
+                <h3 class="card__title"><a class="card__title-name" href="">Butter Chicken Taco</a></h3>
+                <div class="card__description">
+                    <p>Tender chicken in a spicy creamy sauce, wrapped
+                     in a crispy tortilla with aromatic spices.</p>
+                </div>
+                <div class="card__text">
+                    <p class="card__price">$1.15</p>
+                    <svg class="card__basket" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0.5" y="0.5" width="39" height="39" rx="19.5"/>
+  <path d="M11.6667 11.6667H13.1167C14.0167 11.6667 14.725 12.4417 14.65 13.3333L13.9584 21.6333C13.8417 22.9916 14.9167 24.1583 16.2833 24.1583H25.1584C26.3584 24.1583 27.4084 23.175 27.5 21.9833L27.95 15.7333C28.05 14.35 27 13.225 25.6083 13.225H14.85"/>
+  <path d="M23.5417 28.3333C24.117 28.3333 24.5833 27.867 24.5833 27.2917C24.5833 26.7164 24.117 26.25 23.5417 26.25C22.9664 26.25 22.5 26.7164 22.5 27.2917C22.5 27.867 22.9664 28.3333 23.5417 28.3333Z"/>
+  <path d="M16.875 28.3333C17.4503 28.3333 17.9166 27.867 17.9166 27.2917C17.9166 26.7164 17.4503 26.25 16.875 26.25C16.2997 26.25 15.8333 26.7164 15.8333 27.2917C15.8333 27.867 16.2997 28.3333 16.875 28.3333Z"/>
+  <path d="M17.5 16.6667H27.5"/>
+</svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/images/menu3.png" alt="burger" class="card__image">
+            <div class="card__body">
+                <h3 class="card__title"><a class="card__title-name" href="">Chicken Burger</a></h3>
+                <div class="card__description">
+                    <p>A juicy chicken patty with melted cheese, fresh salad,
+                     and a special sauce in a soft bun.</p>
+                </div>
+                <div class="card__text">
+                    <p class="card__price">$2.00</p>
+                    <svg class="card__basket" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0.5" y="0.5" width="39" height="39" rx="19.5"/>
+  <path d="M11.6667 11.6667H13.1167C14.0167 11.6667 14.725 12.4417 14.65 13.3333L13.9584 21.6333C13.8417 22.9916 14.9167 24.1583 16.2833 24.1583H25.1584C26.3584 24.1583 27.4084 23.175 27.5 21.9833L27.95 15.7333C28.05 14.35 27 13.225 25.6083 13.225H14.85"/>
+  <path d="M23.5417 28.3333C24.117 28.3333 24.5833 27.867 24.5833 27.2917C24.5833 26.7164 24.117 26.25 23.5417 26.25C22.9664 26.25 22.5 26.7164 22.5 27.2917C22.5 27.867 22.9664 28.3333 23.5417 28.3333Z"/>
+  <path d="M16.875 28.3333C17.4503 28.3333 17.9166 27.867 17.9166 27.2917C17.9166 26.7164 17.4503 26.25 16.875 26.25C16.2997 26.25 15.8333 26.7164 15.8333 27.2917C15.8333 27.867 16.2997 28.3333 16.875 28.3333Z"/>
+  <path d="M17.5 16.6667H27.5"/>
+</svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/images/menu4.png" alt="burger" class="card__image">
+            <div class="card__body">
+                <h3 class="card__title"><a class="card__title-name" href="">Cheese Chicken Naan</a></h3>
+                <div class="card__description">
+                    <p>Baked chicken with cheese and vegetables, wrapped in
+                     warm pita bread and seasoned with a mild spicy sauce.</p>
+                </div>
+                <div class="card__text">
+                    <p class="card__price">$2.50</p>
+                   <svg class="card__basket" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0.5" y="0.5" width="39" height="39" rx="19.5"/>
+  <path d="M11.6667 11.6667H13.1167C14.0167 11.6667 14.725 12.4417 14.65 13.3333L13.9584 21.6333C13.8417 22.9916 14.9167 24.1583 16.2833 24.1583H25.1584C26.3584 24.1583 27.4084 23.175 27.5 21.9833L27.95 15.7333C28.05 14.35 27 13.225 25.6083 13.225H14.85"/>
+  <path d="M23.5417 28.3333C24.117 28.3333 24.5833 27.867 24.5833 27.2917C24.5833 26.7164 24.117 26.25 23.5417 26.25C22.9664 26.25 22.5 26.7164 22.5 27.2917C22.5 27.867 22.9664 28.3333 23.5417 28.3333Z"/>
+  <path d="M16.875 28.3333C17.4503 28.3333 17.9166 27.867 17.9166 27.2917C17.9166 26.7164 17.4503 26.25 16.875 26.25C16.2997 26.25 15.8333 26.7164 15.8333 27.2917C15.8333 27.867 16.2997 28.3333 16.875 28.3333Z"/>
+  <path d="M17.5 16.6667H27.5"/>
+</svg>
+
+
+                    <!-- <img src="/icons/menu-basket.svg" alt="basket" class="card__basket"> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/images/menu5.png" alt="burger" class="card__image">
+            <div class="card__body">
+                <h3 class="card__title"><a class="card__title-name" href="">3 Layer Burger</a></h3>
+                <div class="card__description">
+                    <p>A triple layer of juicy patties, fresh vegetables, 
+                    and cheeses that create a rich and powerful flavor.</p>
+                </div>
+                <div class="card__text">
+                    <p class="card__price">$4.99</p>
+                    <svg class="card__basket" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0.5" y="0.5" width="39" height="39" rx="19.5"/>
+  <path d="M11.6667 11.6667H13.1167C14.0167 11.6667 14.725 12.4417 14.65 13.3333L13.9584 21.6333C13.8417 22.9916 14.9167 24.1583 16.2833 24.1583H25.1584C26.3584 24.1583 27.4084 23.175 27.5 21.9833L27.95 15.7333C28.05 14.35 27 13.225 25.6083 13.225H14.85"/>
+  <path d="M23.5417 28.3333C24.117 28.3333 24.5833 27.867 24.5833 27.2917C24.5833 26.7164 24.117 26.25 23.5417 26.25C22.9664 26.25 22.5 26.7164 22.5 27.2917C22.5 27.867 22.9664 28.3333 23.5417 28.3333Z"/>
+  <path d="M16.875 28.3333C17.4503 28.3333 17.9166 27.867 17.9166 27.2917C17.9166 26.7164 17.4503 26.25 16.875 26.25C16.2997 26.25 15.8333 26.7164 15.8333 27.2917C15.8333 27.867 16.2997 28.3333 16.875 28.3333Z"/>
+  <path d="M17.5 16.6667H27.5"/>
+</svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/images/menu6.png" alt="burger" class="card__image">
+            <div class="card__body">
+                <h3 class="card__title"><a class="card__title-name" href="#">Sandwich</a></h3>
+                <div class="card__description">
+                    <p>Fresh vegetables, flavorful ham, and melting cheese, 
+                    all wrapped up in a light and crispy sandwich.</p>
+                </div>
+                <div class="card__text">
+                    <p class="card__price">$2.80</p>
+                    <svg class="card__basket" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0.5" y="0.5" width="39" height="39" rx="19.5"/>
+  <path d="M11.6667 11.6667H13.1167C14.0167 11.6667 14.725 12.4417 14.65 13.3333L13.9584 21.6333C13.8417 22.9916 14.9167 24.1583 16.2833 24.1583H25.1584C26.3584 24.1583 27.4084 23.175 27.5 21.9833L27.95 15.7333C28.05 14.35 27 13.225 25.6083 13.225H14.85"/>
+  <path d="M23.5417 28.3333C24.117 28.3333 24.5833 27.867 24.5833 27.2917C24.5833 26.7164 24.117 26.25 23.5417 26.25C22.9664 26.25 22.5 26.7164 22.5 27.2917C22.5 27.867 22.9664 28.3333 23.5417 28.3333Z"/>
+  <path d="M16.875 28.3333C17.4503 28.3333 17.9166 27.867 17.9166 27.2917C17.9166 26.7164 17.4503 26.25 16.875 26.25C16.2997 26.25 15.8333 26.7164 15.8333 27.2917C15.8333 27.867 16.2997 28.3333 16.875 28.3333Z"/>
+  <path d="M17.5 16.6667H27.5"/>
+</svg>
+                </div>
+            </div>
+        </div>
+
+      </div>
+      <button class="menu__button button">See All</button>
+    </section>
+
+    <section class="statistics container">
+        <h2 class="statistics__title">We believe in making quality food</h2>
+        <div class="statistics__body">
+            <ul class="statistics__list">
+                <li class="statistics__item">
+                    <div class="statistics__item-num">
+                        <p>2M+</p>
+                    </div>
+                    <div class="statistics__item-description">
+                        <p>Happy Customers</p>
+                    </div>
+                </li>
+                <li class="statistics__item">
+                    <div class="statistics__item-num">
+                        <p>98%</p>
+                    </div>
+                    <div class="statistics__item-description">
+                        <p>Customer Satisfaction</p>
+                    </div>
+                </li>
+                <li class="statistics__item">
+                    <div class="statistics__item-num">
+                        <p>20+</p>
+                    </div>
+                    <div class="statistics__item-description">
+                        <p>Our Branches</p>
+                    </div>
+                </li>
+                <li class="statistics__item">
+                    <div class="statistics__item-num">
+                        <p>100+</p>
+                    </div>
+                    <div class="statistics__item-description">
+                        <p>Total Employees </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="franchisee container" id="franchisee">
+        <h2 class="franchisee__title">Start The Adventure Today And Become a Franchisee</h2>
+        <div class="franchisee__body">
+            <div class="franchisee__description">
+                <p>Start your gastronomic adventure today and become a part of a successful restaurant chain!
+                Open your own restaurant under a trusted brand and offer customers their favorite burgers, crispy
+                potatoes, fresh snacks, and signature dishes that will win their hearts with just one bite.
+                We will support you every step of the way, from choosing the right location and design to training
+                your staff and developing a successful marketing strategy. With our help, you will receive a ready-made
+                business concept, proven recipes, and comprehensive support to make your restaurant a favorite destination
+                for guests and a successful business for you. Join us and create your dream restaurant, turning your 
+                passion for food into a profitable and inspiring business!</p>
+            </div>
+            <button class="franchisee__button button">Become a Franchisee</button>
+        </div>
+    </section>
+
+    <section class="reviews container">
+        <h2 class="reviews__title">What Our Clients Are Saying</h2>
+        <div class="reviews__body">
+
+          <div class="reviews__item item">
+            <div class="item__header">
+                <div class="item__profile">
+                <img class="item__image"
+                 src="/icons/Avater1.png" alt="avater">
+                <div class="item__profile-info">
+                    <h3 class="item__profile-name">Michal Gun</h3>
+                    <p class="item__profile-account">Head of sales at Tesla</p>
+                </div>        
+                </div>
+                <div class="item__decorate">
+                    <span class="item__decorate-line"></span>
+                    <span class="item__decorate-comma"></span>
+                </div>
+            </div>
+            <div class="item-text">The service is fast and friendly, and the staff is always welcoming.
+         The restaurant is clean and cozy, and you can comfortably sit even during peak hours.</div>
+          </div>
+
+          <div class="reviews__item item">
+            <div class="item__header">
+                <div class="item__profile">
+                <img class="item__image"
+                 src="/icons/Avater2.png" alt="avater">
+                <div class="item__profile-info">
+                    <h3 class="item__profile-name">Aleena White</h3>
+                    <p class="item__profile-account">Accountant of Ozone</p>
+                </div>        
+                </div>
+                <div class="item__decorate">
+                    <span class="item__decorate-line"></span>
+                    <span class="item__decorate-comma"></span>
+                </div>
+            </div>
+            <div class="item-text">The burgers are always fresh and juicy, the potatoes are crispy,
+         and the sauces are delicious. I love coming here with friends or family, and it's always a
+         pleasure to grab a bite to eat and enjoy the food.</div>
+          </div>
+          <div class="reviews__item item">
+            <div class="item__header">
+                <div class="item__profile">
+                <img class="item__image"
+                 src="/icons/Avater3.png" alt="avater">
+                <div class="item__profile-info">
+                    <h3 class="item__profile-name">Cries Lee</h3>
+                    <p class="item__profile-account">CEO Of Montee</p>
+                </div>        
+                </div>
+                <div class="item__decorate">
+                    <span class="item__decorate-line"></span>
+                    <span class="item__decorate-comma"></span>
+                </div>
+            </div>
+            <div class="item-text">By becoming a franchisee of this restaurant, I received a ready-made
+         concept and full support from the team. The business is developing easily, customers are satisfied,
+         and the opening of a new location went smoothly.</div>
+          </div>
+          <div class="reviews__item item">
+            <div class="item__header">
+                <div class="item__profile">
+                <img class="item__image"
+                 src="/icons/Avater1.png" alt="avater">
+                <div class="item__profile-info">
+                    <h3 class="item__profile-name">Michal Gun</h3>
+                    <p class="item__profile-account">Head of sales at Tesla</p>
+                </div>        
+                </div>
+                <div class="item__decorate">
+                    <span class="item__decorate-line"></span>
+                    <span class="item__decorate-comma"></span>
+                </div>
+            </div>
+            <div class="item-text">The service is fast and friendly, and the staff is always welcoming.
+         The restaurant is clean and cozy, and you can comfortably sit even during peak hours.</div>
+          </div>
+          <div class="reviews__item item">
+            <div class="item__header">
+                <div class="item__profile">
+                <img class="item__image"
+                 src="/icons/Avater2.png" alt="avater">
+                <div class="item__profile-info">
+                    <h3 class="item__profile-name">Aleena White</h3>
+                    <p class="item__profile-account">Accountant of Ozone</p>
+                </div>        
+                </div>
+                <div class="item__decorate">
+                    <span class="item__decorate-line"></span>
+                    <span class="item__decorate-comma"></span>
+                </div>
+            </div>
+            <div class="item-text">The burgers are always fresh and juicy, the potatoes are crispy,
+         and the sauces are delicious. I love coming here with friends or family, and it's always a
+         pleasure to grab a bite to eat and enjoy the food.</div>
+          </div>
+          <div class="reviews__item item">
+            <div class="item__header">
+                <div class="item__profile">
+                <img class="item__image"
+                 src="/icons/Avater3.png" alt="avater">
+                <div class="item__profile-info">
+                    <h3 class="item__profile-name">Cries Lee</h3>
+                    <p class="item__profile-account">CEO Of Montee</p>
+                </div>        
+                </div>
+                <div class="item__decorate">
+                    <span class="item__decorate-comma"></span>
+                    <span class="item__decorate-line"></span>
+                </div>
+            </div>
+            <div class="item-text">By becoming a franchisee of this restaurant, I received a ready-made
+         concept and full support from the team. The business is developing easily, customers are satisfied,
+         and the opening of a new location went smoothly.</div>
+          </div>
+        </div>
+    </section>
+
+    <section class="support ">
+            <div class="support__header">
+                <h2 class="support__title">For more Support</h2>
+                </div>
+                <div class="support__body">
+                    <label class="support__body-label visually-hidden" for="email">Email</label>
+                    <input class="support__body-input" name="email" type="email" id="email" placeholder="Enter Email">
+                    <button class="support__body-button button black">Subscribe</button>
+                   </div>
+    </section>
+
+    <section class="location container" id="address">
+        <div class="location__wrapper">
+            <div class="location__body">
+                <h2 class="location__body-title">Our Restaurants.
+                Where to Find Us?</h2>
+                <div class="location__body-description">
+                    <p>Want to have a superb meal in an exceptional
+                     setting with family, friends or work colleagues,
+                     here are the addresses of our restaurants.</p>
+                </div>
+                <button class="location__button button">Find The Nearest Cheffest</button>
+            </div>
+            <div class="location__wrap" style="position: relative; display: inline-block;">
+            <iframe class="location__iframe" src="/images/MAP.png" frameborder="0"></iframe>
+            <a href="https://www.google.com/maps/@50.1159837,8.5818985,14z?entry=ttu" target="_blank"
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: block; text-indent: -9999px;">
+            Open Google Maps
+            </a>
+            </div>
+            <!-- <a class="location__link"
+            href="https://www.google.com/maps/@50.1159837,8.5818985,14z?entry=ttu&g_ep=EgoyMDI1MTIwNy4wIKXMDSoASAFQAw%3D%3D">
+            <iframe class="location__iframe" src="/images/MAP.png" frameborder="0"
+             ></iframe></a> -->
+        </div>
+    </section>
+   </main>
+
+   <footer class="footer" id="contacts">
+    <div class="footer__wrapper container">
+        <nav class="footer__menu">
+            <ul class="footer__menu-list">
+    
+                <li class="footer__menu-item">
+                    <a href=""><h3 class="footer__menu-title">Contact us</h3></a>
+                    <a class="footer__menu-link"
+                    href="#menu">Our menus</a>
+                    <a class="footer__menu-link"
+                    href="#menu" >Our burgers</a>
+                    <a class="footer__menu-link"
+                    href="" >Our times sides</a>
+                    <a class="footer__menu-link"
+                    href="#menu" >Our naandwiches</a>
+                </li>
+    
+                <li class="footer__menu-item">
+                    <a href=""><h3 class="footer__menu-title">Legal information</h3></a>
+                    <a class="footer__menu-link"
+                    href="" >Legal Notice</a>
+                </li>
+    
+                <li class="footer__menu-item">
+                    <a href=""><h3 class="footer__menu-title">Contact us</h3></a>
+                    <a class="footer__menu-link"
+                    href="#contacts" >Contacts</a>
+                    <a class="footer__menu-link"
+                    href="#address" >Our addresses</a>
+                    <a class="footer__menu-link"
+                    href="#franchisee" >Become a Times Square franchisee</a>
+                </li>
+    
+                <li class="footer__menu-item">
+                    <a href=""><h3 class="footer__menu-title">We accept</h3></a>
+                     <div class="footer__menu-wrapper">
+                        <a href="https://www.mastercard.com/global/en.html" class="footer__menu-wrapper-link" target="_blank">
+                         <img class="footer__menu-wrapper"
+                         src="icons/Mastercard.svg" alt="mastercard">
+                        </a>
+                        
+                         <a href="https://cis.visa.com" class="footer__menu-wrapper-link" target="_blank"><img class="footer__menu-image"
+                         src="/icons/Visa.svg" alt="visa" ></a>
+                         
+                     </div>
+                     <a href="https://www.americanexpress.com/fr-fr/" class="footer__menu-wrapper-link" target="_blank"><img class="footer__menu-image"
+                         src="/icons/American-express.svg" alt="american-express"></a>
+                </li>
+    
+            </ul>
+        </nav>
+    
+        <div class="footer__soc1als soc1als">
+            <nav class="soc1als__menu">
+                <ul class="soc1als__list">
+                    <li class="soc1als__item">
+                        <a href="https://fr-fr.facebook.com" class="soc1als__link" target="_blank">
+                            <img class="soc1als__image"
+                            src="icons/facebook.svg" alt="facebook">
+                        </a>
+                    </li>
+                    <li class="soc1als__item">
+                        <a href="https://x.com" class="soc1als__link" target="_blank">
+                            <img class="soc1als__image"
+                            src="icons/twitter.svg" alt="twitter">
+                        </a>
+                    </li>
+                    <li class="soc1als__item">
+                        <a href="https://discord.com" class="soc1als__link" target="_blank">
+                            <img class="soc1als__image"
+                            src="icons/discord.svg" alt="discord">
+                        </a>
+                    </li>
+                    <li class="soc1als__item">
+                        <a href="https://www.linkedin.com/in/firstname-lastname-uniqueID/" class="soc1als__link" target="_blank">
+                            <img class="soc1als__image"
+                            src="icons/linkdin.svg" alt="linkdin">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <p class="footer__copyright">© 2024 Nayef All rights reserved.</p>
+        </div>
+    </div>
+    </footer>
+
+
+   <dialog class="tablet-overlay active visible-tablet-above" id="tabletOverlay">
+   <form class="tablet-overlay__close-button-wrapper" method="dialog">
+    <button class="tablet-overlay__close-button close-button"
+    type="submit">
+    <span></span>
+    <span class="visually-hidden">Close navigation menu</span>
+    </button>
+   </form>
+   <div class="tablet-overlay__body">
+    <svg class="tablet-overlay-magnifier header__magnifier" width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M15.4583 28.9167C22.8912 28.9167 28.9167 22.8912 28.9167 15.4583C28.9167 8.0255 22.8912 2 15.4583 2C8.0255 2 2 8.0255 2 15.4583C2 22.8912 8.0255 28.9167 15.4583 28.9167Z" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M30.3333 30.3333L27.5 27.5" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+        <ul class="tablet-overlay-list header__menu-list">
+            <li class="tablet-overlay-item header__menu-item">
+                <a class="tablet-overlay-link header__menu-link" href="#">Welcome</a>
+            </li>
+             <li class="tablet-overlay-item header__menu-item">
+                <a class="tablet-overlay-link header__menu-link" href="#">Our Menu</a>
+            </li>
+             <li class="tablet-overlay-item header__menu-item">
+                <a class="tablet-overlay-link header__menu-link" href="#">Franchise</a>
+            </li>
+             <li class="tablet-overlay-item header__menu-item">
+                <a class="tablet-overlay-link header__menu-link" href="#">Contact</a>
+            </li>
+        </ul>
+        <button class="tablet-overlay-button header__button button black">Become a Member</button>
+   </div>
+   </dialog>
+      
+
+</body>
+</html>
