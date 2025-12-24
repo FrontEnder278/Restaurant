@@ -34,7 +34,7 @@
         &::after {
         position: absolute;
         content: '';
-        background-image: url(/icons/Stars.svg);
+        background-image: url(./icons/Stars.svg);
         top: 107%;
         left: 0;
         background-size: contain; // чтобы изображение вписывалось
@@ -59,7 +59,7 @@
     &-comma {
             position: absolute;
             content: '';
-            background-image: url(/icons/Group.svg);
+            background-image: url(./icons/Group.svg);
             top: 20px;
             left: 0;
             width: 24px;
@@ -99,4 +99,5 @@
         font-size: 14px;
     }
   }
+
 }
