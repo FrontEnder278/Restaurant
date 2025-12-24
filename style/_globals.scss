@@ -1,0 +1,34 @@
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    background-color: var(--color-dark);
+    color: var(--color-whight);
+}
+
+a:hover,
+button:hover,
+input:hover,
+svg:hover {
+    transition-duration: var(--transition-duration);
+}
+
+a {
+    @include reset-link;
+    font-weight: 600;
+}
+
+h1 {
+    @include fluid-text(29, 66);
+    line-height: 1.45;
+    font-weight: 900;
+}
+
+h2 {
+    @include fluid-text(28, 50);
+    font-weight: 600;
+}
+
+h3 {
+    @include fluid-text(20, 24);
+}
+
