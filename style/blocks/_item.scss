@@ -34,7 +34,7 @@
         &::after {
         position: absolute;
         content: '';
-        background-image: url(./icons/Stars.svg);
+        background-image: url('..icons/Stars.svg');
         top: 107%;
         left: 0;
         background-size: contain; // чтобы изображение вписывалось
@@ -101,3 +101,4 @@
   }
 
 }
+
