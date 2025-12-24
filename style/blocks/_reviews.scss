@@ -1,0 +1,35 @@
+.reviews {
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 70px;
+    padding-bottom: var(--section-padding-y);
+
+    @include tablet {
+        --section-padding-y: 80px;
+    }
+
+    @include mobile {
+        row-gap: 30px;
+    }
+
+    &__title {
+        text-align: center;
+        line-height: 1.79;
+    }
+
+    &__body {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+
+        @include laptop {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include mobile {
+            grid-template-columns: 1fr;
+        }
+    }
+
+}

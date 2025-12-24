@@ -1,0 +1,77 @@
+.food {
+    padding-block: var(--section-padding-y);
+    display: flex;
+    flex-direction: column;
+    row-gap: 70px;
+
+    @include tablet {
+        --section-padding-y: 80px;
+    }
+
+    @include mobile {
+       padding-top: 0;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        row-gap: 16px;
+       
+    }
+
+    &__description {
+        font-size: 20px;
+        max-width: 820px;
+        line-height: 1.5;
+
+        @include tablet {
+            font-size: 18px;
+        }
+
+        @include mobile {
+            font-size: 16px;
+        }
+    }
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+
+        @include laptop {
+            align-items: center;
+            flex-direction: column;
+            row-gap: 40px;
+        }
+    }
+
+    &__text {
+        display: flex;
+        font-size: 18px;
+        line-height: 1.67;
+        max-width: 513px;
+        align-items: center;
+
+        @include tablet {
+            font-size: 16px;
+            text-align: center;
+        }
+
+        @include mobile {
+            font-size: 14px;
+        }
+    }
+
+    &__video {
+       position: relative;
+
+       &::after {
+        @include abs-center;
+        @include square(90px);
+        content: '';
+        background: url(/icons/Play-Button.svg) center/contain no-repeat;
+       }
+    }
+}

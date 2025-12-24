@@ -1,0 +1,103 @@
+.welcome {
+    min-height: 100vh;
+    width: 100%;
+    background-image: 
+    linear-gradient(to right, rgba(0,0,0,0.85) 35%, rgba(0,0,0,0) 60%),
+    url(/images/burger-main.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+
+    @include tablet {
+    // Высота хедера на планшете, например 80px
+    $header-height: 120px;
+    margin-top: -$header-height;       // сдвигаем секцию под хедер
+    padding-top: calc($header-height + 100px); // поднимаем контент вниз
+    background-image: 
+    linear-gradient(to right, rgba(0,0,0,0.85) 55%, rgba(0,0,0,0) 70%),
+    url(/images/burger-main.webp);
+   
+  }
+
+  @include mobile {
+    background-image: 
+    linear-gradient(to right, rgba(0,0,0,0.2)),
+    url(/images/image.png);
+  }
+
+    &__wrapper {
+    max-width: 650px;
+    width: 100%;
+   
+
+     @include desktop {
+        max-width: 570px;
+     }
+
+     @include laptop {
+        width: 450px;
+     }   
+
+     @include tablet {
+        width: 350px;
+     }
+
+     @include mobile {
+         margin-inline: auto;
+        width: 290px;
+     }
+
+     &-inner {
+      @include mobile {
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+      }
+     }
+    }
+
+    &__title {
+        padding-top: 70px;
+        padding-bottom: 10px;
+        line-height: 1.45;
+        font-weight: 900;
+
+        @include tablet {
+            line-height: 1.52;
+            padding-top: 0;
+        }
+        
+        @include mobile {
+            padding-bottom: 30px
+        }
+    }
+
+    &__description {
+        @include fluid-text(18, 20);
+        max-width: 500px;
+        width: 100%;
+        line-height: 1.5;
+        font-weight: 400;
+        padding-bottom: 30px;
+
+        @include laptop {
+            max-width: 350px;
+        }
+
+        @include mobile {
+            line-height: 1.71;
+            max-width: 280px;
+            padding-bottom: 150px;
+        }
+    }
+
+
+    &__button {
+        width: 212px;
+
+        @include mobile {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+.soc1als {
+        display: flex;
+        justify-content: space-between;
+
+        border-top: 1px solid #4f4f4f;;
+        padding-top: 28px;
+       
+        &__list {
+            display: flex; 
+            column-gap: 20px;
+        }
+
+        &__image:hover {
+           scale: 1.06;
+           transition-duration: var(--transition-duration);
+           stroke: var(--color-orange);
+        }
+      
+    }
+
+    

@@ -1,0 +1,122 @@
+.footer {
+    background-color: var(--color-gray);
+    padding-block: 80px;
+
+    &__menu {
+        padding-bottom: 100px;
+
+        @include mobile {
+          padding-bottom: 50px;
+        }
+
+        &-list {
+         display: flex;
+         column-gap: 103px;
+
+         @include laptop {
+          column-gap: 70px;
+         }
+
+         @include tablet {
+          flex-direction: column;
+          align-items: center;
+          row-gap: 60px;
+         }
+
+         @include mobile {
+          align-items: flex-start;
+         }
+        }
+
+        &-item {
+            display: inline-flex;
+            flex-direction: column;
+            // align-items: center;
+            row-gap: 24px;
+
+            @include tablet {
+              align-items: center;
+            }
+
+            @include mobile {
+              align-items: flex-start;
+            }
+        }
+
+        &-title {
+          font-size: 24px;
+
+          @include laptop {
+            font-size: 20px;
+
+          }
+            &:hover {
+                color: var(--color-orange);
+                transition-duration: var(--transition-duration);
+            }
+        }
+
+        &-link {
+           display: inline-block;          // ширина = ширина текста
+           position: relative;
+           font-weight: 400;
+           font-size: 18px;
+           padding: 0;
+
+       @include laptop {
+          font-size: 16px;
+  }
+
+       &::after {
+         content: '';
+         position: absolute;
+        bottom: -3px;
+        left: 0;                       // старт линии с левого края текста
+        width: 100%;                   // ширина = ширина ссылки (inline-block)
+        height: 2px;
+        background-color: var(--color-whight);
+        transform: scaleX(0);          // сжато в центре
+        transform-origin: center;      // растягивается из центра
+        transition: transform var(--transition-duration);
+  }
+
+      &:hover::after {
+        transform: scaleX(1);          // растягивается до полной ширины текста
+   }
+}
+
+
+        // &-link {
+        //     font-weight: 400;
+        //     font-size: 18px;
+        //     position: relative;
+        //     display: inline-block;
+        //     padding: 0;
+
+        //     &::after {
+        //         position: absolute;
+        //         content: '';
+        //         width: 0%;
+        //         height: 2px;
+        //         bottom: -3px;
+        //         left: 50%;
+        //         transform: translate(-50%);
+        //         background-color: var(--color-whight);
+        //         transition-duration: var(--transition-duration);
+        //       }
+
+        //         &:hover::after {
+        //             width: 100%;
+        //         }
+            
+        // }
+    }
+
+    &__soc1als {
+      @include mobile {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+      }
+    }
+}

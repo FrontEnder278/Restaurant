@@ -1,0 +1,102 @@
+.item {
+
+     padding: 30px;
+     background-color: var(--color-gray);
+     display: flex;
+     flex-direction: column;
+     row-gap: 30px;
+     border-radius: 16px;
+     height: 370px;
+    
+
+     @include tablet {
+        padding: 30px 20px;
+        row-gap: 20px;
+        max-height: 500px;
+        height: 100%;
+     }
+
+     &__header {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 15px;
+     }
+
+     &__profile {
+        display: flex;
+        align-items: start;
+        column-gap: 12px;
+        position: relative;
+        
+      &-info {
+        position: relative;
+    
+        &::after {
+        position: absolute;
+        content: '';
+        background-image: url(/icons/Stars.svg);
+        top: 107%;
+        left: 0;
+        background-size: contain; // чтобы изображение вписывалось
+        background-repeat: no-repeat;
+        width: 72px;
+        height: 12px;
+        }
+     }
+
+     &-name {
+        font-size: 18px;
+     }
+
+     &-account {
+        font-size: 14px;
+        opacity: 0.7;
+     }
+}
+ &__decorate {
+    position: relative;
+
+    &-comma {
+            position: absolute;
+            content: '';
+            background-image: url(/icons/Group.svg);
+            top: 20px;
+            left: 0;
+            width: 24px;
+            height: 19px;
+    }
+
+    &-line {
+      position: relative;
+      display: inline-block;
+
+        &::after {
+        position: absolute;
+        content: '';
+        width: 200px;
+        height: 0.5px;
+        left: 20px;
+        top: 15px;
+        background-color: var(--color-whight);
+        opacity: 0.2;
+        // transform: translateY(-50%);
+
+        @include tablet {
+            width: 160px;
+        }
+
+        @include mobile {
+         width: 180px;
+        }
+        }
+    }
+ }
+
+  &-text {
+    opacity: 0.7;
+
+    @include tablet {
+        font-size: 14px;
+    }
+  }
+}

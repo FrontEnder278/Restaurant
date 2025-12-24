@@ -1,0 +1,96 @@
+.support {
+    background-color: var(--color-whight);
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    padding-block: 80px;
+
+    @include tablet {
+        padding: 40px 20px;
+    }
+
+    @include mobile {
+        row-gap: 30px;
+    }
+
+    &__title {
+        @include fluid-text(30, 70);
+
+        color: var(--color-dark);
+        font-weight: 700;
+        text-align: center;
+    }
+
+    &__body {
+        display: flex;
+        justify-content: center;
+        column-gap: 20px;
+
+        @include tablet {
+            flex-direction: column;
+            align-items: center;
+            row-gap: 20px;
+        }
+
+
+        &-input {
+            border: 1px solid var(--color-dark);
+            border-radius: 40px;
+            width: 530px;
+            padding-left: 30px;
+            caret-color: var(--color-orange);
+            color: var(--color-orange);
+            font-weight: bold;
+
+            &:focus {
+                border-color: var(--color-orange);
+                outline: none;
+            }
+
+            @include tablet {
+                height: 56px;
+                width: 400px;
+            }
+
+            @include mobile {
+                width: 280px;
+            }
+            
+            &::placeholder {
+                color: var(--color-dark);
+                font-weight: 600;
+                font-size: 18px;
+
+                @include mobile {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        &-button {
+           @include flex-center(true);
+
+            background-color: var(--color-dark);
+            color: var(--color-whight);
+            padding: 20px 54px;
+
+            @include tablet {
+                height: 60px;
+                max-width: 100%;;
+            }
+            
+            @include mobile {
+                width: 280px;
+            }
+        }
+
+         
+    }
+   
+}
+
+.black {   
+    background: linear-gradient(90deg, #df610c 50%, var(--color-dark) 0%);
+    background-size: 200% 100%;
+    background-position: right;
+        }

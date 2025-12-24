@@ -1,0 +1,140 @@
+.header {
+   display: flex;
+   align-items: center;
+   position: relative;
+   width: 100%;
+   z-index: 10;
+  
+   padding-block: 25px;
+   background-color: var(--color-dark);
+
+   @include tablet {
+    background-color: transparent;
+   }
+
+  
+   &__menu {
+    padding: 16px 18px;
+    display: flex;
+    align-items: center;
+
+    @include desktop {
+      padding: 0;
+    }
+
+   &-list {
+    display: flex;
+    column-gap: 24px;
+    align-items: center;
+    
+
+    @include desktop {
+      column-gap: 18px;
+    }
+   }
+
+   &-link {
+      font-size: 18px;
+      position: relative;
+
+      &::after {
+        position: absolute;
+        content: '';
+        width: 0;
+        height: 3px;
+        bottom: -3px;
+        left: 50%;
+        transform: translate(-50%);
+        background-color: var(--color-whight);
+        transition-duration: var(--transition-duration);
+        border-radius: 5px;
+
+        @include tablet {
+          background-color: var(--color-dark);
+        }
+      }
+
+       &:hover::after {
+          width: 100%;
+        }
+
+      @include desktop {
+         font-size: 16px;
+      }
+
+      @include laptop {
+        font-size: 14px;
+      }
+   }
+    }
+
+   &__logo {
+    margin-left: 54px;
+   
+
+    & img {
+      // width: 100%;
+      // max-width: 100px;
+      object-fit: contain;
+    }
+
+    @include laptop {
+      @include square(60px);
+      margin-left: 30px;
+    }
+
+    @include tablet {
+      // position: absolute;
+      // left: 50%;
+      // translate: -50%;
+      
+      margin: 0 auto;
+      
+    }
+   }
+
+   .action {
+    margin-left: auto;
+    display: flex;
+    column-gap: 30px;
+    align-items: center;
+   
+
+    @include tablet {
+     margin-left: 0;
+    }
+
+    @include mobile {
+      position: absolute;
+      top: 140px;
+      right: 20px;
+      // margin-bottom: -140px;
+    }
+
+   &__magnifier,
+   &__basket {
+     &:hover {
+      opacity: 0.7;
+      scale: 1.05;
+      color: #df610c;
+     }
+   }
+
+   &__basket {
+    @include tablet {
+       padding-left: 0;
+      
+    }
+   }
+
+   &__button {
+      @include desktop {
+         
+         padding: 5px 5px;
+         height: 60px;
+         width: 170px;
+         
+      }
+   }
+    }
+}

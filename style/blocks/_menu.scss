@@ -1,0 +1,112 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 80px;
+    padding-block: var(--section-padding-y);
+
+     @include tablet {
+        --section-padding-y: 80px;
+        padding-top: 0;
+    }
+
+    @include mobile {
+        padding-top: 0;
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        row-gap: 40px;
+        width: 100%;
+    }
+    
+    &__title {
+        @include mobile {
+            text-align: center;
+        }
+    }
+
+    &__navigation {
+        width: 100%;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        gap: 16px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+
+        @include desktop {
+            column-gap: 70px;
+        }
+
+        @include tablet {
+            column-gap: 40px;
+        }
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    &__item {
+       flex-shrink: 0;
+        max-width: 135px;
+        min-width: 70px;
+        border: 1px solid var(--color-dark);
+        scroll-snap-align: start;
+        position: relative;
+        
+       
+    }
+
+    &__link {
+        @include fluid-text(16, 18);
+        font-weight: 400;
+        position: relative;
+
+        &::after {
+        position: absolute;
+        content: '';
+        width: 0;
+        height: 10px;
+        bottom: -8px;
+        left: 50%;
+        border-radius: 5px;
+        transform: translate(-50%);
+        background-color: var(--color-whight);
+        transition-duration: var(--transition-duration);
+    }
+      &:hover::after {
+            width: 100%;
+        }
+    }
+
+    &__body {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+
+        @include tablet {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+
+        @include mobile {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__button {
+        width: 168px;
+
+        @include mobile {
+            max-width: 280px;
+            width: 100%;
+        }
+    }
+}
