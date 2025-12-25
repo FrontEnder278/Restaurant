@@ -3,7 +3,7 @@
     width: 100%;
     background-image: 
     linear-gradient(to right, rgba(0,0,0,0.85) 35%, rgba(0,0,0,0) 60%),
-    url('../../images/burger-main.webp');
+    url(../images/burger-main.webp);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -16,14 +16,14 @@
     padding-top: calc($header-height + 100px); // поднимаем контент вниз
     background-image: 
     linear-gradient(to right, rgba(0,0,0,0.85) 55%, rgba(0,0,0,0) 70%),
-    url(/images/burger-main.webp);
+    url(../images/burger-main.webp);
    
   }
 
   @include mobile {
     background-image: 
     linear-gradient(to right, rgba(0,0,0,0.2)),
-    url(./images/image.png);
+    url(../images/image.png);
   }
 
     &__wrapper {
@@ -102,6 +102,7 @@
     }
 
 }
+
 
 
 
