@@ -769,7 +769,7 @@ h3 {
   width: 90px;
   aspect-ratio: 1;
   content: "";
-  background: url(/icons/Play-Button.svg) center/contain no-repeat;
+  background: url(../icons/Play-Button.svg) center/contain no-repeat;
 }
 
 .menu {
