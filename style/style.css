@@ -599,7 +599,7 @@ h3 {
 .welcome {
   min-height: 100vh;
   width: 100%;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.85) 35%, rgba(0, 0, 0, 0) 60%), url(../images/burger-main.webp);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.85) 35%, rgba(0, 0, 0, 0) 60%), url('../images/burger-main.webp');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -609,12 +609,12 @@ h3 {
   .welcome {
     margin-top: -120px;
     padding-top: 220px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.85) 55%, rgba(0, 0, 0, 0) 70%), url(../images/burger-main.webp);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.85) 55%, rgba(0, 0, 0, 0) 70%), url('../images/burger-main.webp');
   }
 }
 @media (max-width: 480px) {
   .welcome {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2)), url(../images/image.png);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2)), url('../images/image.png');
   }
 }
 .welcome__wrapper {
@@ -774,7 +774,7 @@ h3 {
   width: 90px;
   aspect-ratio: 1;
   content: "";
-  background: url(../icons/Play-Button.svg) center/contain no-repeat;
+  background: url('../icons/Play-Button.svg') center/contain no-repeat;
 }
 
 .menu {
@@ -1142,7 +1142,7 @@ h3 {
 .item__profile-info::after {
   position: absolute;
   content: "";
-  background-image: url(../icons/stars.svg);
+  background-image: url('../icons/stars.svg');
   top: 107%;
   left: 0;
   background-size: contain;
@@ -1163,7 +1163,7 @@ h3 {
 .item__decorate-comma {
   position: absolute;
   content: "";
-  background-image: url(../icons/group.svg);
+  background-image: url('../icons/group.svg');
   top: 20px;
   left: 0;
   width: 24px;
