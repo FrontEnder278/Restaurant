@@ -4,9 +4,9 @@
    align-items: center;
    row-gap: 30px;
    padding-block: var(--section-padding-y);
+   padding-top: 0;
 
    @include tablet {
-    padding-top: 0;
     --section-padding-y: 90px;
     row-gap: 20px;
    }
@@ -41,4 +41,5 @@
       width: 280px;
     }
    }
+
 }
