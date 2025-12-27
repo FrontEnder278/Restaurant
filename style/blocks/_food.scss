@@ -71,7 +71,8 @@
         @include abs-center;
         @include square(90px);
         content: '';
-        background: url(/icons/Play-Button.svg) center/contain no-repeat;
+        background: url(../icons/Play-Button.svg) center/contain no-repeat;
        }
     }
+
 }
