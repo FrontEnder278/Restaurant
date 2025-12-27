@@ -4,14 +4,10 @@
     align-items: center;
     row-gap: 80px;
     padding-block: var(--section-padding-y);
+    padding-top: 0;
 
      @include tablet {
         --section-padding-y: 80px;
-        padding-top: 0;
-    }
-
-    @include mobile {
-        padding-top: 0;
     }
 
     &__header {
@@ -110,3 +106,4 @@
         }
     }
 }
+
